@@ -8,7 +8,7 @@ define( [ 'jquery', 'howler', 'bootstrap', 'select2' ], function remainingTimeAp
     var $window = $( window );
 
     var audio = new Howl.Howl({
-        urls: [ '/audio/ship-bell.mp3' ],
+        urls: [ 'audio/ship-bell.mp3' ],
         loop: true
     });
 
