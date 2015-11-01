@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Timer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+        href="bower_components/bootstrap/dist/css/bootstrap.min.css"
+    >
+    <link rel="stylesheet"
+        href="bower_components/font-awesome/css/font-awesome.min.css"
+    >
+    <link rel="stylesheet"
+        href="bower_components/select2/dist/css/select2.min.css"
+    >
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="timer col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" id="timer-container">
+                <h1>Simple Timer</h1>
+                <form>
+                    <div class="form-group">
+                        <select class="form-control" id="timer-select">
+                        </select>
+                    </div>
+                    <div class="customize form-group hidden">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-5">
+                                <input class="form-control"
+                                    id="customized-hour"
+                                    type="number"
+                                    placeholder="Hour"
+                                >
+                            </div>
+                            <div class="col-xs-4 col-sm-5">
+                                <input class="form-control"
+                                    id="customized-minutes"
+                                    type="number"
+                                    placeholder="Minutes"
+                                >
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <div class="checkbox">
+                                    <label>
+                                        <input id="play-alarm" type="checkbox">
+                                        Alarm
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-lg btn-block"
+                            id="start-btn"
+                            type="button"
+                        >
+                            Start
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="hidden" id="timer-modal">
+        <a class="closing" href="#">
+            <i class="fa fa-times"></i>
+        </a>
+        <div class="remaining-container">
+            <span id="remaining-time"></span>
+        </div>
+    </div>
+    <script>
+        window.JW = {};
+        window.JW.CDNJS = '/bower_components/';
+    </script>
+    <script data-main="js/main"
+        src="bower_components/requirejs/require.js">
+    </script>
+    <script>
+        requirejs(['js/app.js']);
+    </script>
+</body>
+</html>
