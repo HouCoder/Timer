@@ -1,4 +1,4 @@
-define( [ 'jquery', 'howler', 'bootstrap', 'select2' ], function remainingTimeApp( $, Howl ) {
+require( [ 'jquery', 'howler', 'bootstrap', 'select2' ], function remainingTimeApp( $, Howl ) {
     var avaibleMinutes = [ 5, 10, 30, 60 ];
     var $timerSelect = $( '#timer-select' );
     var $startButton = $( '#start-btn' );
