@@ -4,19 +4,19 @@ body {
     height: 100%;
 }
 
-.timer {
+.timer-container {
     margin-top: 50px;
 }
 
-.timer h1 {
+.timer-container h1 {
     margin-bottom: 30px;
 }
 
-#start-btn {
+.start-btn {
     margin-top: 30px;
 }
 
-#timer-modal {
+.timer-modal {
     width: 100%;
     height: 100%;
     background-color: #FFF;
@@ -24,7 +24,7 @@ body {
     position: relative;
 }
 
-#timer-modal .closing {
+.timer-modal .closing {
     position: absolute;
     right: 0;
     font-size: 40px;

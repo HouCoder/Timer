@@ -3,9 +3,11 @@ require( [ 'jquery', 'howler', 'bootstrap', 'select2' ], function remainingTimeA
     var $timerSelect = $( '#timer-select' );
     var $startButton = $( '#start-btn' );
     var $customize = $( '.customize' );
-    var $timerContainer = $( '#timer-container' );
-    var $timerModal = $( '#timer-modal' );
+    var $timerContainer = $( '.timer-container' );
+    var $timerModal = $( '.timer-modal' );
     var $window = $( window );
+    var $title = $( 'title' );
+    var titleText = 'Simple Timer';
 
     var audio = new Howl.Howl({
         urls: [ 'audio/ship-bell.mp3' ],
@@ -53,9 +55,9 @@ require( [ 'jquery', 'howler', 'bootstrap', 'select2' ], function remainingTimeA
      */
     function handleOnblurFocus() {
         if ( onblur ) {
-            $( 'title' ).text( 'HandsUp, Timeout!' );
+            $title.text( 'HandsUp, Timeout!' );
             $window.one( 'focus', function() {
-                $( 'title' ).text( 'Simple Timer' );
+                $title.text( titleText );
             });
         }
     }

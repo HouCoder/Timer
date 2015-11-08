@@ -1,7 +1,5 @@
 # Timer
 
-**This project is still under development.**
-
 ### Setup
 
 Make sure [bower](http://bower.io/) is installed in your local.
