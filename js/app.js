@@ -10,7 +10,7 @@ require( [ 'jquery', 'howler', 'bootstrap', 'select2' ], function remainingTimeA
     var titleText = 'Simple Timer';
 
     var audio = new Howl.Howl({
-        urls: [ 'audio/ship-bell.mp3' ],
+        src: [ 'audio/ship-bell.mp3' ],
         loop: true
     });
 
