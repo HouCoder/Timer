@@ -1,5 +1,5 @@
 (function (){
-    var COMPONENTS_PATH = '../bower_components/';
+    var CDNJS_PATH = '//cdnjs.cloudflare.com/ajax/libs/';
 
     requirejs.config({
         baseUrl: './js/',
@@ -11,11 +11,11 @@
             }
         },
         paths: {
-            jquery: COMPONENTS_PATH + 'jquery/dist/jquery.min',
-            uaparser: COMPONENTS_PATH + 'ua-parser-js/dist/ua-parser.min',
-            bootstrap: COMPONENTS_PATH + 'bootstrap/dist/js/bootstrap.min',
-            select2: COMPONENTS_PATH + 'select2/dist/js/select2.min',
-            howler: COMPONENTS_PATH + 'howler.js/howler.min'
+            jquery: CDNJS_PATH + 'jquery/1.12.4/jquery.min',
+            uaparser: CDNJS_PATH + 'UAParser.js/0.7.12/ua-parser.min',
+            bootstrap: CDNJS_PATH + 'twitter-bootstrap/3.3.7/js/bootstrap.min',
+            select2: CDNJS_PATH + 'select2/4.0.3/js/select2.min',
+            howler: CDNJS_PATH + 'howler/2.0.3/howler.min'
         }
     });
 })();
